@@ -4,5 +4,7 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.pythonPath": "/home/fran/.virtualenvs/twitter/bin/python"
+	}
 }

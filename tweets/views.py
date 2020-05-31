@@ -4,11 +4,12 @@ from .models import Tweet
 
 def home_view(request, *args, **kwargs):
     print(args, kwargs)
-    return HttpResponse("<h1>Hello World</h1>")   
+    #return HttpResponse("<h1>Hello World</h1>") 
+    return render(request, "pages/home.html", context={}, status=200)  
 
 def tweet_detail_view(request, tweed_id, *args, **kwargs):
     """
-    REST API VIEW 
+    REST API VIEW python
         Consume by javascript, or Swift/Java/iOS/Android
         return json.data
     """

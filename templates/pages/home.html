@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
-{% block head_title%}
-this is amazing
-{% endblock head_title%}
-
 {% block content %}
-Welcome to tweetme
 
-<div id="tweets">
+<br>
+<div class='row text-center'>
+    <div class='col'>
+        <h1>Welcome to Tweetme</h1>
+    </div>
+</div>
+
+  
+<div class='row' id="tweets">
     Loading...
 
 </div>
@@ -42,7 +45,7 @@ Welcome to tweetme
 
 
     function formatTweetElement(tweet){
-        var formatedTweet = "<div class='mb-4 tweet' id='tweet-" + tweet.id 
+        var formatedTweet = "<div class='col-12 col-md-10 mx-auto border rounded py-3 mb-4 tweet' id='tweet-" + tweet.id 
         + "'><p>" + tweet.content + 
             "</p><div class='btn-group'>" + likeBtn(tweet) + "</p></div></div>"
         return formatedTweet  
